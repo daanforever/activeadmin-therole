@@ -1,4 +1,4 @@
-# ActiveadminTheRole
+# Activeadmin-TheRole
 
 Pre-alpha version.
 It is strongly recommended not to use yet.
