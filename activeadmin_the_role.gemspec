@@ -1,16 +1,16 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'activeadmin_the_role/version'
+require 'activeadmin-the_role/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "activeadmin_the_role"
+  spec.name          = "activeadmin-the_role"
   spec.version       = ActiveadminTheRole::VERSION
   spec.authors       = ["daanforever"]
   spec.email         = ["daan.forever@gmail.com"]
   spec.description   = "ActiveAdmin and The_Role integration"
   spec.summary       = "ActiveAdmin and The_Role integration"
-  spec.homepage      = "https://github.com/daanforever/activeadmin_the_role"
+  spec.homepage      = "https://github.com/daanforever/activeadmin-the_role"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
