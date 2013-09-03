@@ -36,13 +36,13 @@ module ActiveadminTherole
           generate "the_role", "install"
           rake "the_role_engine:install:migrations"
           migration_template 'db/migrate/add_role_id_to_user.rb', 'db/migrate/add_role_id_to_user.rb'
-          rake "db:migrate"
+          rake "db:migrate" if ActiveRecord::Migrator.needs_migration?
           generate "the_role", "admin"
         end
       end
 
       def invoke_db_migrate
-        rake "db:migrate"
+        rake "db:migrate" if ActiveRecord::Migrator.needs_migration?
       end
 
       # Execute all steps for Devise, ActiveAdmin and TheRole
