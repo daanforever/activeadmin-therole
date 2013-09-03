@@ -1,4 +1,4 @@
-require "activeadmin-the_role/version"
+require "activeadmin-therole/version"
 
 module ActiveadminTheRole
   # Your code goes here...
