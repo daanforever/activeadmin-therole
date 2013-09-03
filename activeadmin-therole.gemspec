@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["daanforever"]
   spec.email         = ["daan.forever@gmail.com"]
   spec.description   = "ActiveAdmin and The_Role integration"
-  spec.summary       = "Provides ActiveAdmin and The_Role integration"
+  spec.summary       = "Provides ActiveAdmin and TheRole integration"
   spec.homepage      = "https://github.com/daanforever/activeadmin-therole"
   spec.license       = "MIT"
 
