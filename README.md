@@ -1,6 +1,7 @@
 # ActiveadminTheRole
 
-TODO: Write a gem description
+Pre-alpha version.
+It is strongly recommended not to use yet.
 
 ## Installation
 
