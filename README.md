@@ -16,7 +16,7 @@ And then execute:
 Or install it yourself as:
 
     $ gem install activeadmin-therole
-    $ rails g activeadmin_the_role:install
+    $ rails g activeadmin_therole:install
 
 ## Usage
 
