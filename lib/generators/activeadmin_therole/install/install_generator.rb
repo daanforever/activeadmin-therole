@@ -36,6 +36,7 @@ module ActiveadminTherole
           generate "the_role", "install"
           rake "the_role_engine:install:migrations"
           migration_template 'db/migrate/add_role_id_to_user.rb', 'db/migrate/add_role_id_to_user.rb'
+          inject_into_file File.join(destination_root, "app", "models", "user.rb"), "\n\tinclude TheRoleUserModel\n\n", after: "class User < ActiveRecord::Base\n"
           rake "db:migrate" if ActiveRecord::Migrator.needs_migration?
           generate "the_role", "admin"
         end
