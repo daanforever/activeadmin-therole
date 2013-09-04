@@ -6,17 +6,15 @@ It is strongly recommended not to use yet.
 ## Installation
 
 Add this line to your application's Gemfile:
-
+    
+    gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
     gem 'activeadmin-therole'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install activeadmin-therole
     $ rails g activeadmin_therole:install
+
 
 ## Usage
 
