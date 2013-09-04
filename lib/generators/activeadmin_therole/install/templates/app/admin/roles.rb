@@ -1,4 +1,7 @@
 ActiveAdmin.register Role do
+
+  config.filters = false
+
   index :download_links => false do
     column :name
     column :title
@@ -22,9 +25,8 @@ ActiveAdmin.register User do
 
   index :download_links => false do
     column :email
-    column :current_sign_in_at
+    column :role
     column :last_sign_in_at
-    column :sign_in_count
     default_actions
   end
 
@@ -36,6 +38,19 @@ ActiveAdmin.register User do
       f.input :role, as: :select, collection: Role.all, required: true
     end
     f.actions
+  end
+
+  show do
+    attributes_table do
+      row :email
+      row :id
+      row :role
+      row :sign_in_count
+      row :current_sign_in_at
+      row :current_sign_in_ip
+      row :last_sign_in_at
+      row :last_sign_in_ip
+    end
   end
 
   controller do
